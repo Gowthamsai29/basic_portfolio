@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voice-Activated WhatsApp Messenger</title>
+    <style>
+      body {
+        background-color: #000;
+        color: #0f0;
+        font-family: "Courier New", Courier, monospace;
+        line-height: 1.6;
+        padding: 2em;
+      }
+
+      .section {
+        border: 2px solid #0f0;
+        padding: 1em;
+        margin-bottom: 1em;
+      }
+
+      h3 {
+        color: #0f0;
+      }
+
+      ul {
+        list-style-type: none;
+        padding-left: 1em;
+      }
+
+      ul li:before {
+        content: "▹";
+        color: #0f0;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+
+      code {
+        color: #0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="text-align: center">Voice-Activated WhatsApp Messenger</h1>
+
+      <div class="section">
+        <h3>Overview:</h3>
+        <p>
+          The provided Python script integrates speech recognition, audio
+          recording, and WhatsApp message sending functionalities using various
+          libraries such as <code>pywhatkit</code>,
+          <code>speech_recognition</code>, <code>sounddevice</code>,
+          <code>numpy</code>, and <code>scipy</code>.
+        </p>
+      </div>
+
+      <div class="section">
+        <h3>Detailed Functionality:</h3>
+        <ul>
+          <li>
+            <strong>Recording Audio from Microphone:</strong>
+            <ul>
+              <li>
+                Utilizes <code>sounddevice</code> to record audio from the
+                microphone.
+              </li>
+              <li>
+                Saves the recorded audio to a WAV file
+                (<code>RECORDING.WAV</code>).
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Speech Recognition:</strong>
+            <ul>
+              <li>
+                Uses <code>speech_recognition</code> to convert speech from the
+                recorded audio file to text.
+              </li>
+              <li>
+                Google's Speech Recognition API (<code>recognize_google</code>)
+                is employed for accurate conversion.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Text Handling:</strong>
+            <ul>
+              <li>
+                Saves the recognized text to a text file
+                (<code>VOICE_AS_TEXT.txt</code>).
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>WhatsApp Message Sending:</strong>
+            <ul>
+              <li>
+                Implements <code>pywhatkit</code> to send a WhatsApp message
+                with the recognized text.
+              </li>
+              <li>
+                Requires user input for recipient's phone number and the time to
+                send the message (in 24-hour format).
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Execution Flow:</h3>
+        <p>
+          The script begins by recording audio from the microphone and saving it
+          to <code>RECORDING.WAV</code>. It then attempts to recognize speech
+          from the recorded audio file. If successful, the recognized text is
+          saved to <code>VOICE_AS_TEXT.txt</code>. User input is solicited for
+          the recipient's phone number and the desired time to send the message.
+          Finally, the recognized text is sent as a WhatsApp message at the
+          specified time.
+        </p>
+      </div>
+
+      <div class="section">
+        <h3>Error Handling:</h3>
+        <p>
+          Handles potential errors such as unrecognized audio or issues with the
+          Google Speech Recognition service. Displays appropriate error messages
+          for failed operations.
+        </p>
+      </div>
+
+      <div class="section">
+        <h3>Requirements:</h3>
+        <p>
+          Requires Python libraries: <code>pywhatkit</code>,
+          <code>speech_recognition</code>, <code>sounddevice</code>,
+          <code>numpy</code>, <code>scipy</code>. Google API credentials may be
+          necessary for speech recognition.
+        </p>
+      </div>
+
+      <div class="section">
+        <h3>Usage Recommendations:</h3>
+        <p>
+          Ensure proper microphone access and internet connectivity for speech
+          recognition and WhatsApp functionality. Customize the script as needed
+          for specific use cases, such as adjusting recording duration or
+          enhancing error handling.
+        </p>
+      </div>
+
+      <div class="section">
+        <h3>Future Enhancements:</h3>
+        <ul>
+          <li>
+            Implement additional error handling for network issues or API
+            failures.
+          </li>
+          <li>
+            Enhance user interface with graphical elements or command-line
+            options for improved usability.
+          </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>Conclusion:</h3>
+        <p>
+          This script effectively combines audio processing, speech recognition,
+          and messaging capabilities, suitable for applications requiring
+          automated interaction via voice input and WhatsApp messaging.
+        </p>
+        <p>
+          For more details on the project development, visit the
+          <a
+            href="YOUR_PROJECT_DEVELOPMENT_LINK"
+            target="_blank"
+            style="color: #f00"
+            >project development page</a
+          >.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

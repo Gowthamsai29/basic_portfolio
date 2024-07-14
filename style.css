@@ -1,0 +1,121 @@
+/* Base Styles */
+body {
+    font-family: 'Conso', Courier New, monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    background: #000;
+    color: #0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+a {
+    color: #0f0;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #0096c1;
+    color: #00303e;
+}
+
+.container {
+    display: block;
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #66d9ef;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2.5em;
+    border-bottom: 1px solid #66d9ef;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 2em;
+    border-bottom: 1px solid #66d9ef;
+    padding-bottom: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.2em;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+pre {
+    background-color: #222;
+    padding: 1em;
+    border-radius: 0.5em;
+    overflow-x: auto;
+    color: #0f0;
+    margin-bottom: 1em;
+}
+
+.oneliner {
+    display: inline-block;
+    max-height: 20px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.multi-column {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
+
+/* Color Classes */
+.selected {
+    color: #0f0;
+    background: #0096c1;
+}
+
+.white {
+    color: #0f0;
+}
+
+.grey {
+    color: #999;
+}
+
+.blue {
+    color: #66d9ef;
+}
+
+.green {
+    color: #a6e22e;
+}
+
+.orange {
+    color: #fd971f;
+}
+
+.fuschia {
+    color: #ec007c;
+}
+
+.yellow {
+    color: #efe158;
+}
+
+.purple {
+    color: #ae81ff;
+}

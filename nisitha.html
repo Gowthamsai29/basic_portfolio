@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NISITA App - QR Code-Based Security Solution</title>
+    <style>
+      /* Basic styling */
+      body {
+        font-family: "Courier New", Courier, monospace;
+        background-color: #000;
+        color: #0f0;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #111;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+        border: 1px solid #0f0;
+      }
+      .header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .header h1 {
+        color: #0f0;
+        font-size: 2.5em;
+        text-shadow: 0 0 5px #0f0;
+      }
+      .header p {
+        color: #0f0;
+        font-size: 1.2em;
+      }
+      .content {
+        margin-top: 20px;
+      }
+      .section {
+        margin-bottom: 20px;
+        padding: 15px;
+        background-color: #222;
+        border: 1px solid #0f0;
+        border-radius: 4px;
+      }
+      .section h2 {
+        color: #0f0;
+        font-size: 1.8em;
+        border-bottom: 1px solid #0f0;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+      }
+      .section p {
+        color: #0f0;
+        line-height: 1.6;
+      }
+      .section ul {
+        list-style-type: square;
+        color: #0f0;
+        margin-left: 20px;
+      }
+      .section ul li {
+        margin-bottom: 5px;
+      }
+      .section a {
+        color: #0f0;
+        text-decoration: underline;
+      }
+      .section a:hover {
+        color: #f00;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>NISITA App</h1>
+        <p>QR Code-Based Security Solution for Educational Institutions</p>
+      </div>
+      <div class="content">
+        <div class="section">
+          <h2>Abstract</h2>
+          <p>
+            The rapid advancements in technology have opened new avenues for
+            enhancing security and efficiency in educational institutions. This
+            project focuses on developing a mobile application for NIT Warangal
+            that leverages QR code scanning to streamline the process of
+            tracking student activities. Traditional methods such as manual
+            attendance logs and biometric systems present several limitations,
+            including inefficiency, susceptibility to errors, and
+            ineffectiveness during pandemics. The proposed system addresses
+            these issues by providing a secure, reliable, and user-friendly
+            solution for security officers.
+          </p>
+        </div>
+        <div class="section">
+          <h2>Introduction</h2>
+          <p>
+            In today's fast-paced world, ensuring the security and efficient
+            management of student movements within educational institutions is
+            paramount. National Institute of Technology Warangal (NITW) is no
+            exception, with its large campus and substantial student body
+            necessitating robust and streamlined security protocols. Traditional
+            methods of monitoring student entry and exit, such as manual
+            logbooks, are not only time-consuming but also prone to errors and
+            inefficiencies.
+          </p>
+        </div>
+        <div class="section">
+          <h2>Problem Statement</h2>
+          <p>
+            The current system for tracking student entry and exit at NITW
+            involves manual logging and biometric systems. While biometrics
+            offer certain advantages, they also present significant challenges.
+            The biometric machines often overheat, fail to capture impressions
+            accurately, and are not viable during health crises such as the
+            COVID-19 pandemic. Manual logging, on the other hand, is
+            inefficient, prone to human error, and lacks real-time data
+            accessibility. There is a clear need for a more accurate, efficient,
+            and reliable system to monitor student movements. Our project aims
+            to address these issues by leveraging QR code technology to automate
+            the tracking process, ensuring precise and timely records of student
+            entries and exits.
+          </p>
+        </div>
+        <div class="section">
+          <h2>Literature about Similar Works</h2>
+          <p>
+            Several institutions have implemented automated attendance and
+            tracking systems using various technologies such as RFID, biometric
+            scanning, and mobile applications. RFID systems, while effective,
+            can be costly and require substantial infrastructure changes.
+            Biometric systems offer high accuracy but are susceptible to issues
+            such as overheating, failed impressions, and are unsuitable during
+            pandemics due to hygiene concerns. Mobile applications using QR
+            codes have emerged as a cost-effective and efficient alternative,
+            offering ease of use and minimal infrastructure requirements. These
+            applications ensure contactless operation, which is crucial during
+            health crises, and provide real-time data for improved monitoring
+            and security.
+          </p>
+        </div>
+        <div class="section">
+          <h2>Proposed System</h2>
+          <p>
+            The proposed system is a mobile application that uses QR code
+            scanning to track student activities. The application is designed to
+            provide a user-friendly interface for security officers to log in,
+            scan QR codes, and manage scanned data. The main features include
+            user authentication via phone number and OTP, QR code scanning,
+            timestamping of scanned data, and options to mark and share
+            suspicious entries.
+          </p>
+        </div>
+        <div class="section">
+          <h2>Objectives</h2>
+          <ul>
+            <li>
+              <strong>Enhance Security:</strong> Provide a reliable system for
+              security officers to track and verify student activities.
+            </li>
+            <li>
+              <strong>Improve Efficiency:</strong> Streamline the process of
+              activity tracking, reducing manual errors and saving time.
+            </li>
+            <li>
+              <strong>User-Friendly Interface:</strong> Ensure the application
+              is easy to use for security officers with minimal technical
+              training.
+            </li>
+            <li>
+              <strong>Data Management:</strong> Facilitate the efficient
+              management, categorization, and sharing of scanned data.
+            </li>
+          </ul>
+        </div>
+        <div class="section">
+          <h2>System Components</h2>
+          <ul>
+            <li>
+              <strong>User Authentication:</strong>
+              <ul>
+                <li>
+                  Firebase Authentication: Utilizes Firebase for secure login
+                  using phone numbers. Upon entering their phone number,
+                  security officers receive a 6-digit OTP (One Time Password)
+                  via SMS for verification.
+                </li>
+                <li>
+                  ReCAPTCHA Verification: Ensures that the login process is
+                  secure and prevents automated bot logins.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>User Interface:</strong> Intuitive design with launcher
+              page for phone number entry and main interface post-login.
+            </li>
+            <li>
+              <strong>QR Code Scanning:</strong>
+              <ul>
+                <li>
+                  Camera Permission: Requests permission to access the device's
+                  camera.
+                </li>
+                <li>
+                  Scanning Functionality: Captures QR code and timestamps
+                  scanned data.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Data Management:</strong>
+              <ul>
+                <li>
+                  Pop-up Dialog: Displays student details upon successful QR
+                  code scanning, with options to share, copy text, or mark as
+                  favorite.
+                </li>
+                <li>
+                  Recent Scanned & Favorites: Sections that list recently
+                  scanned QR codes and entries marked as favorite.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="section">
+          <h2>Detailed Workflow</h2>
+          <h3>Login Activity:</h3>
+          <ul>
+            <li>
+              Phone Number Entry: Security officers enter their phone number on
+              the launcher page.
+            </li>
+            <li>
+              OTP Verification: Firebase sends a 6-digit OTP to the entered
+              phone number. The officer enters the OTP to gain access to the
+              main interface.
+            </li>
+            <li>
+              ReCAPTCHA Verification: Ensures that the login process is secure.
+            </li>
+          </ul>
+          <h3>QR Code Scanning:</h3>
+          <ul>
+            <li>
+              Initiate Scanner: The officer taps the "Scan QR" button, prompting
+              the app to request camera permission.
+            </li>
+            <li>
+              Permission Handling: If the officer denies permission, the app
+              will request it two more times. If permission is still denied, the
+              app crashes.
+            </li>
+            <li>
+              Scanning Process: Once permission is granted, the scanner
+              activates, capturing the QR code and timestamping the scan.
+            </li>
+          </ul>
+          <h3>Data Management:</h3>
+          <ul>
+            <li>
+              Categorization: Scanned data is categorized into "Recent Scanned"
+              and "Favorites" sections.
+            </li>
+            <li>
+              Sharing Options: Allows the security officer to share scanned
+              details via WhatsApp, text message, or other available apps.
+            </li>
+          </ul>
+        </div>
+        <div class="section">
+          <h2>Design Details</h2>
+          <h3>Front-end:</h3>
+          <ul>
+            <li>
+              User Interface Design: Intuitive and user-friendly interface with
+              clear navigation and controls.
+            </li>
+            <li>
+              Error Handling: Ensures that the app handles errors gracefully,
+              such as repeated permission requests and app crashes.
+            </li>
+          </ul>
+          <h3>Back-end:</h3>
+          <ul>
+            <li>
+              Firebase Integration: Utilizes Firebase for user authentication
+              and room database management.
+            </li>
+            <li>
+              Data Storage: Efficiently stores and retrieves scanned data,
+              ensuring quick access and minimal latency.
+            </li>
+          </ul>
+        </div>
+        <div class="section">
+          <h2>Conclusion</h2>
+          <p>
+            The mobile application developed for NIT Warangal effectively
+            addresses the limitations of traditional student tracking methods.
+            By leveraging QR code technology and mobile interfaces, this app
+            offers a more efficient, reliable, and user-friendly solution for
+            security officers. It enhances security by enabling officers to
+            quickly scan, manage, and share student data, thus improving overall
+            operational efficiency.
+          </p>
+          <p>
+            For more details on the project development, visit the
+            <a
+              href="YOUR_PROJECT_DEVELOPMENT_LINK"
+              target="_blank"
+              style="color: #f00"
+              >project development page</a
+            >.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

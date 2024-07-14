@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Li-Fi</title>
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+        background-color: #000;
+        color: #0f0;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .container {
+        width: 80%;
+        max-width: 800px;
+        padding: 2em;
+        background-color: #111;
+        border-radius: 0.5em;
+        box-shadow: 0 0 1em rgba(0, 255, 0, 0.3);
+      }
+
+      .section {
+        margin-bottom: 2em;
+        padding: 1em;
+        border: 2px solid #0f0;
+        border-radius: 0.5em;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: #0f0;
+        text-align: center;
+      }
+
+      ul {
+        list-style-type: square;
+        color: #0f0;
+        margin-left: 20px;
+      }
+
+      li {
+        margin-bottom: 0.5em;
+      }
+
+      a {
+        color: #0f0;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #0a0;
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 1em;
+        }
+        .section {
+          padding: 0.8em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Li-Fi</h1>
+
+      <div class="section">
+        <h2>Project Overview</h2>
+        <p>
+          Nisita is an innovative mobile application designed to utilize the
+          device's flashlight to transmit data using Li-Fi technology. By
+          encoding data into binary code and sending it through flash signals,
+          Nisita leverages the potential of visible light communication to
+          create a unique and efficient method of data transmission. The app
+          demonstrates the practical application of Li-Fi, highlighting its
+          benefits and potential uses.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Objectives</h2>
+        <ul>
+          <li>
+            Develop an Android application that uses the device's flashlight for
+            data transmission.
+          </li>
+          <li>
+            Implement Li-Fi technology to encode and decode data via light
+            signals.
+          </li>
+          <li>
+            Provide a user-friendly interface to interact with the app and
+            understand its functionality.
+          </li>
+          <li>
+            Demonstrate the potential of Li-Fi technology in real-world
+            applications.
+          </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Features</h2>
+        <h3>Data Transmission</h3>
+        <ul>
+          <li>
+            <strong>Binary Encoding</strong>: The app converts text data into
+            binary code.
+          </li>
+          <li>
+            <strong>Flashlight Signal</strong>: The encoded binary data is
+            transmitted using the device's flashlight.
+          </li>
+        </ul>
+        <h3>Data Reception</h3>
+        <ul>
+          <li>
+            <strong>Light Sensor</strong>: The app uses the device's light
+            sensor to receive and decode the transmitted signals.
+          </li>
+          <li>
+            <strong>Data Decoding</strong>: The received binary signals are
+            converted back into readable text.
+          </li>
+        </ul>
+        <h3>User Interface</h3>
+        <ul>
+          <li>
+            <strong>Transmission Interface</strong>: Users can input the data
+            they wish to transmit.
+          </li>
+          <li>
+            <strong>Reception Interface</strong>: Users can start the reception
+            mode to decode incoming light signals.
+          </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Technologies Used</h2>
+        <ul>
+          <li>
+            <strong>Android Studio</strong>: The integrated development
+            environment (IDE) used for developing the app.
+          </li>
+          <li>
+            <strong>Java/Kotlin</strong>: The programming languages used for
+            Android development.
+          </li>
+          <li>
+            <strong>Light Sensor API</strong>: Utilized to detect light signals
+            for data reception.
+          </li>
+          <li>
+            <strong>Flashlight Control</strong>: Managed through the camera API
+            to blink the flashlight according to the encoded binary data.
+          </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Development Process</h2>
+        <h3>Planning</h3>
+        <ul>
+          <li>
+            <strong>Requirement Analysis</strong>: Defined the scope and
+            features of the app.
+          </li>
+          <li>
+            <strong>Feasibility Study</strong>: Evaluated the feasibility of
+            using Li-Fi technology with the device's flashlight and light
+            sensor.
+          </li>
+        </ul>
+        <h3>Design</h3>
+        <ul>
+          <li>
+            <strong>UI/UX Design</strong>: Designed the user interface for ease
+            of use.
+          </li>
+          <li>
+            <strong>System Architecture</strong>: Outlined the app's
+            architecture, including data encoding, transmission, and reception
+            modules.
+          </li>
+        </ul>
+        <h3>Implementation</h3>
+        <ul>
+          <li>
+            <strong>Flashlight Control Module</strong>: Implemented
+            functionality to control the device's flashlight for data
+            transmission.
+          </li>
+          <li>
+            <strong>Binary Encoding/Decoding Module</strong>: Developed
+            algorithms for encoding text data into binary and decoding received
+            binary signals.
+          </li>
+          <li>
+            <strong>Light Sensor Module</strong>: Integrated the device's light
+            sensor to detect incoming signals.
+          </li>
+        </ul>
+        <h3>Testing</h3>
+        <ul>
+          <li>
+            <strong>Unit Testing</strong>: Conducted unit tests for individual
+            modules.
+          </li>
+          <li>
+            <strong>Integration Testing</strong>: Ensured seamless integration
+            of all modules.
+          </li>
+          <li>
+            <strong>User Testing</strong>: Gathered feedback from initial users
+            to improve the app's functionality and usability.
+          </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Challenges Faced</h2>
+        <ul>
+          <li>
+            <strong>Synchronization</strong>: Ensuring accurate synchronization
+            between the transmitter and receiver to decode data correctly.
+          </li>
+          <li>
+            <strong>Environmental Interference</strong>: Dealing with ambient
+            light and other environmental factors that affect data transmission
+            and reception.
+          </li>
+          <li>
+            <strong>Hardware Limitations</strong>: Overcoming limitations of
+            device hardware for precise control and detection of light signals.
+          </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Future Enhancements</h2>
+        <ul>
+          <li>
+            <strong>Improved Error Handling</strong>: Implement robust error
+            detection and correction mechanisms.
+          </li>
+          <li>
+            <strong>Enhanced UI/UX</strong>: Continuously refine the user
+            interface for better user experience.
+          </li>
+          <li>
+            <strong>Expanded Compatibility</strong>: Ensure compatibility with a
+            wider range of devices.
+          </li>
+          <li>
+            <strong>Increased Transmission Range</strong>: Explore methods to
+            increase the effective range of data transmission.
+          </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Conclusion</h2>
+        <p>
+          Nisita successfully demonstrates the practical application of Li-Fi
+          technology using everyday mobile devices. The app not only showcases
+          the potential of visible light communication but also opens up new
+          possibilities for innovative data transmission methods. As technology
+          advances, Nisita can be further enhanced to provide even more
+          efficient and reliable data communication solutions.
+        </p>
+        <p>
+          For more details on the project development, visit the
+          <a
+            href="YOUR_PROJECT_DEVELOPMENT_LINK"
+            target="_blank"
+            style="color: #f00"
+            >project development page</a
+          >.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
