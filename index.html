@@ -57,8 +57,7 @@
               >'"Becquerel, if googled, unveils the unit of radioactivity ! Yah,
               that's potent. I'm not a renowned geek, but I'm on my way."
               '</span
-            >
-            <br />
+            ><br />
           </span>
           }
           <br />
@@ -76,10 +75,8 @@
         <span class="grey oneliner"
           >//
           --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span
-        ><br />
-        <br />
-        <span class="green">About</span><br />
-        <br />
+        ><br /><br />
+        <span class="green">About</span><br /><br />
         <div class="about-content">
           <!-- About text -->
           <div class="about-text">
@@ -87,34 +84,26 @@
             thirst to achieve in loads, I have just stepped in. Being a student
             and hardent programmer, I do all sorts of crispy codings. I hope you
             all appreciate my steps. <br />Gowthamsai, popularly known as [AGS],
-            - short when spelt.
-            <br />
-            <br />This nasty programmer never keeps away. He is never idle. He
-            does all head-butted stuffs to build his Projects. A tech-savy by
-            nature and an average programmer, this man is damn crazy.<br />
-            <br />
+            - short when spelt. <br /><br />This nasty programmer never keeps
+            away. He is never idle. He does all head-butted stuffs to build his
+            Projects. A tech-savy by nature and an average programmer, this man
+            is damn crazy.<br /><br />
             <span class="purple">
-              <br />
-              <s
+              <br /><s
                 >I couldn't spare money to arrange devotees to spread good words
                 about me. So I'm adding it myself. Thanks for your time <3 </s
-              ><br />
-              <br />
+              ><br /><br />
               You can reach me out at:
               <a href="mailto:gowthamsaialajangi@gmail.com"
-                >Soul_vigor@gmail.com</a
+                >becquerel@gmail.com</a
               >.
               <br />
+              Find out my resume :
+              <a href="Gowthamsai_s_resume.pdf">[Resume]</a><br />
             </span>
-            <br />
-            <br />
-            <br />
-            Happy <span id="ing"></span><br />
-            <br />
-            <pre class="grey">
-      01000001 01110010 01110101 01101110 
-              </pre
-            >
+            <br /><br /><br />
+            Happy <span id="ing"></span><br /><br />
+            <pre id="binary-glitch" class="grey">              🅱🅴🅲🆀🆄🅴🆁🅴🅻</pre>
             <br />
             &nbsp;
           </div>
@@ -129,8 +118,7 @@
         <span class="grey oneliner"
           >// Projects
           --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span
-        ><br />
-        <br />
+        ><br /><br />
         <div id="episodes" class="multi-column">
           <a href="nisitha.html" style="color: #f00">01: NISITA</a><br />
           <a href="Lifi.html" style="color: #f00">02: Li-Fi</a><br />
@@ -186,8 +174,14 @@
           >// Meta
           --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span
         >
-        <a href="//github.com/onemadgeek" class="purple-link">[Github]</a>
-        <a href="//linkedin.com/in/aruncvf" class="orange-link">[LinkedIn]</a>
+        <a href="https://github.com/Gowthamsai29" class="purple-link"
+          >[Github]</a
+        >
+        <a
+          href="https://linkedin.com/in/gowthamsai-alajangi"
+          class="orange-link"
+          >[LinkedIn]</a
+        >
 
         <br />&nbsp;
       </div>
@@ -208,7 +202,7 @@
         "@",
         "%",
         "*",
-        "&amp;",
+        "&",
         "&lt;",
         "&gt;",
         "_",
@@ -231,13 +225,21 @@
       var thing = things[Math.floor(Math.random() * things.length)];
       var jnk = junk[Math.floor(Math.random() * junk.length)];
       var display = document.getElementById("ing");
+      var binaryDisplay = document.getElementById("binary-glitch");
       var duration = 50; // in milliseconds
-      var intermissions = 1000; //times to repeat
 
       setInterval(function () {
         var start = Math.floor(Math.random() * thing.length);
         display.innerHTML =
           thing.slice(0, start) + jnk + thing.slice(start + 1);
+      }, duration);
+
+      // Glitch effect for binary string
+      var binaryString = " 🅱🅴🅲🆀🆄🅴🆁🅴🅻";
+      setInterval(function () {
+        var start = Math.floor(Math.random() * binaryString.length);
+        binaryDisplay.innerHTML =
+          binaryString.slice(0, start) + jnk + binaryString.slice(start + 1);
       }, duration);
     </script>
   </body>
