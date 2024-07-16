@@ -1,246 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Becquerel</title>
-    <meta
-      name="description"
-      content="This site was hastily built as my tiny profile page. With so much of thirst to achieve in loads, I have just stepped in. Being a random blogger and hardent pythoner I do all sorts of crispy codings."
-    />
-    <meta name="author" content="Arun Cvf" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="theme-color" content="#ec007c" />
-    <link rel="stylesheet" media="all" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Li-Fi</title>
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+        background-color: #000;
+        color: #0f0;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .container {
+        width: 80%;
+        max-width: 800px;
+        padding: 2em;
+        background-color: #111;
+        border-radius: 0.5em;
+        box-shadow: 0 0 1em rgba(0, 255, 0, 0.3);
+      }
+
+      .section {
+        margin-bottom: 2em;
+        padding: 1em;
+        border: 2px solid #0f0;
+        border-radius: 0.5em;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: #0f0;
+        text-align: center;
+      }
+
+      ul {
+        list-style-type: square;
+        color: #0f0;
+        margin-left: 20px;
+      }
+
+      li {
+        margin-bottom: 0.5em;
+      }
+
+      a {
+        color: #0f0;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #0a0;
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 1em;
+        }
+        .section {
+          padding: 0.8em;
+        }
+      }
+    </style>
   </head>
   <body>
-    <!-- intro -->
-    <div class="container sm-l sm-6 md-3 lg-3">
-      <div class="pad">
-        <br />
-        <span class="grey oneliner sm-off"
-          >// Introduction
-          --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span
-        >
-        <div>
-          <span class="sm-off"><br /><br /></span>
-          <span class="blue"><em>function</em></span>
-          <span class="green">whyThisName</span>(<span class="orange"
-            ><em>name</em></span
-          >) {
-          <br />
-          <span class="string-indent">
-            <span class="blue">let</span> niceName
-            <span class="fuschia">=</span> name<span class="fuschia">.</span
-            ><span class="green">split</span>(<span class="yellow">' '</span
-            >)[<span class="purple">0</span>]; <br />
-          </span>
-          <span class="string-indent">
-            _niceName <span class="fuschia">=</span> niceName<span
-              class="fuschia"
-              >.</span
-            ><span class="green">split</span>(<span class="yellow">' '</span
-            >)<span class="fuschia">.</span
-            ><span class="blue">reverse</span>()<span class="fuschia">.</span
-            ><span class="green">join</span>(<span class="yellow">' '</span
-            >);<br />
-          </span>
-          <span class="string-indent">
-            _niceName <span class="fuschia">=</span> (_niceName
-            <span class="fuschia">===</span>
-            <span class="purple">undefined</span>)
-            <span class="fuschia">?</span>
-            <span class="yellow">'justBrowseit'</span> : _niceName;<br />
-          </span>
-          <span class="string-indent">
-            <span class="fuschia">return</span>
-            <span class="yellow"
-              >'"Becquerel, if googled, unveils the unit of radioactivity ! Yah,
-              that's potent. I'm not a renowned geek, but I'm on my way."
-              '</span
-            ><br />
-          </span>
-          }
-          <br />
-          <span class="green">whyThisName</span>(<span class="yellow"
-            >'Becquerel'</span
-          >);
-        </div>
+    <div class="container">
+      <h1>Li-Fi</h1>
+
+      <div class="section">
+        <h2>Project Overview</h2>
+        <p>
+          Nisita is an innovative mobile application designed to utilize the
+          device's flashlight to transmit data using Li-Fi technology. By
+          encoding data into binary code and sending it through flash signals,
+          Nisita leverages the potential of visible light communication to
+          create a unique and efficient method of data transmission. The app
+          demonstrates the practical application of Li-Fi, highlighting its
+          benefits and potential uses.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Objectives</h2>
+        <ul>
+          <li>
+            Develop an Android application that uses the device's flashlight for
+            data transmission.
+          </li>
+          <li>
+            Implement Li-Fi technology to encode and decode data via light
+            signals.
+          </li>
+          <li>
+            Provide a user-friendly interface to interact with the app and
+            understand its functionality.
+          </li>
+          <li>
+            Demonstrate the potential of Li-Fi technology in real-world
+            applications.
+          </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Features</h2>
+        <h3>Data Transmission</h3>
+        <ul>
+          <li>
+            <strong>Binary Encoding</strong>: The app converts text data into
+            binary code.
+          </li>
+          <li>
+            <strong>Flashlight Signal</strong>: The encoded binary data is
+            transmitted using the device's flashlight.
+          </li>
+        </ul>
+        <h3>Data Reception</h3>
+        <ul>
+          <li>
+            <strong>Light Sensor</strong>: The app uses the device's light
+            sensor to receive and decode the transmitted signals.
+          </li>
+          <li>
+            <strong>Data Decoding</strong>: The received binary signals are
+            converted back into readable text.
+          </li>
+        </ul>
+        <h3>User Interface</h3>
+        <ul>
+          <li>
+            <strong>Transmission Interface</strong>: Users can input the data
+            they wish to transmit.
+          </li>
+          <li>
+            <strong>Reception Interface</strong>: Users can start the reception
+            mode to decode incoming light signals.
+          </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Technologies Used</h2>
+        <ul>
+          <li>
+            <strong>Android Studio</strong>: The integrated development
+            environment (IDE) used for developing the app.
+          </li>
+          <li>
+            <strong>Java/Kotlin</strong>: The programming languages used for
+            Android development.
+          </li>
+          <li>
+            <strong>Light Sensor API</strong>: Utilized to detect light signals
+            for data reception.
+          </li>
+          <li>
+            <strong>Flashlight Control</strong>: Managed through the camera API
+            to blink the flashlight according to the encoded binary data.
+          </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Development Process</h2>
+        <h3>Planning</h3>
+        <ul>
+          <li>
+            <strong>Requirement Analysis</strong>: Defined the scope and
+            features of the app.
+          </li>
+          <li>
+            <strong>Feasibility Study</strong>: Evaluated the feasibility of
+            using Li-Fi technology with the device's flashlight and light
+            sensor.
+          </li>
+        </ul>
+        <h3>Design</h3>
+        <ul>
+          <li>
+            <strong>UI/UX Design</strong>: Designed the user interface for ease
+            of use.
+          </li>
+          <li>
+            <strong>System Architecture</strong>: Outlined the app's
+            architecture, including data encoding, transmission, and reception
+            modules.
+          </li>
+        </ul>
+        <h3>Implementation</h3>
+        <ul>
+          <li>
+            <strong>Flashlight Control Module</strong>: Implemented
+            functionality to control the device's flashlight for data
+            transmission.
+          </li>
+          <li>
+            <strong>Binary Encoding/Decoding Module</strong>: Developed
+            algorithms for encoding text data into binary and decoding received
+            binary signals.
+          </li>
+          <li>
+            <strong>Light Sensor Module</strong>: Integrated the device's light
+            sensor to detect incoming signals.
+          </li>
+        </ul>
+        <h3>Testing</h3>
+        <ul>
+          <li>
+            <strong>Unit Testing</strong>: Conducted unit tests for individual
+            modules.
+          </li>
+          <li>
+            <strong>Integration Testing</strong>: Ensured seamless integration
+            of all modules.
+          </li>
+          <li>
+            <strong>User Testing</strong>: Gathered feedback from initial users
+            to improve the app's functionality and usability.
+          </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Challenges Faced</h2>
+        <ul>
+          <li>
+            <strong>Synchronization</strong>: Ensuring accurate synchronization
+            between the transmitter and receiver to decode data correctly.
+          </li>
+          <li>
+            <strong>Environmental Interference</strong>: Dealing with ambient
+            light and other environmental factors that affect data transmission
+            and reception.
+          </li>
+          <li>
+            <strong>Hardware Limitations</strong>: Overcoming limitations of
+            device hardware for precise control and detection of light signals.
+          </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Future Enhancements</h2>
+        <ul>
+          <li>
+            <strong>Improved Error Handling</strong>: Implement robust error
+            detection and correction mechanisms.
+          </li>
+          <li>
+            <strong>Enhanced UI/UX</strong>: Continuously refine the user
+            interface for better user experience.
+          </li>
+          <li>
+            <strong>Expanded Compatibility</strong>: Ensure compatibility with a
+            wider range of devices.
+          </li>
+          <li>
+            <strong>Increased Transmission Range</strong>: Explore methods to
+            increase the effective range of data transmission.
+          </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Conclusion</h2>
+        <p>
+          Nisita successfully demonstrates the practical application of Li-Fi
+          technology using everyday mobile devices. The app not only showcases
+          the potential of visible light communication but also opens up new
+          possibilities for innovative data transmission methods. As technology
+          advances, Nisita can be further enhanced to provide even more
+          efficient and reliable data communication solutions.
+        </p>
+        <p>
+          For more details on the project development, visit the
+          <a
+            href="YOUR_PROJECT_DEVELOPMENT_LINK"
+            target="_blank"
+            style="color: #f00"
+            >project development page</a
+          >.
+        </p>
       </div>
     </div>
-
-    <!-- About section -->
-    <div class="container md-r sm-6 md-3 md-l lg-3 lg-r">
-      <div class="pad">
-        &nbsp;<br />
-        <span class="grey oneliner"
-          >//
-          --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span
-        ><br /><br />
-        <span class="green">About</span><br /><br />
-        <div class="about-content">
-          <!-- About text -->
-          <div class="about-text">
-            This site was hastily built as my tiny profile page. With so much of
-            thirst to achieve in loads, I have just stepped in. Being a student
-            and hardent programmer, I do all sorts of crispy codings. I hope you
-            all appreciate my steps. <br />Gowthamsai, popularly known as [AGS],
-            - short when spelt. <br /><br />This nasty programmer never keeps
-            away. He is never idle. He does all head-butted stuffs to build his
-            Projects. A tech-savy by nature and an average programmer, this man
-            is damn crazy.<br /><br />
-            <span class="purple">
-              <br /><s
-                >I couldn't spare money to arrange devotees to spread good words
-                about me. So I'm adding it myself. Thanks for your time <3 </s
-              ><br /><br />
-              You can reach me out at:
-              <a href="mailto:gowthamsaialajangi@gmail.com"
-                >becquerel@gmail.com</a
-              >.
-              <br />
-              Find out my resume :
-              <a href="Gowthamsai_s_resume.pdf">[Resume]</a><br />
-            </span>
-            <br /><br /><br />
-            Happy <span id="ing"></span><br /><br />
-            <pre id="binary-glitch" class="grey">              🅱🅴🅲🆀🆄🅴🆁🅴🅻</pre>
-            <br />
-            &nbsp;
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- menu -->
-    <div class="container sm-l sm-6 md-3 md-r lg-3 lg-l">
-      <div class="pad">
-        &nbsp;<br />
-        <span class="grey oneliner"
-          >// Projects
-          --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span
-        ><br /><br />
-        <div id="episodes" class="multi-column">
-          <a href="nisitha.html" style="color: #f00">01: NISITA</a><br />
-          <a href="Lifi.html" style="color: #f00">02: Li-Fi</a><br />
-          <a href="wa.html" style="color: #f00"
-            >03: Voice-Activated WhatsApp Messenger</a
-          ><br />
-          <a href="hand.html" style="color: #f00"
-            >04: Real-time Hand Gesture Recognition System</a
-          ><br />
-          <a href="index.html" style="color: #f00"
-            >05: Visit the site every month to know more</a
-          ><br />
-        </div>
-      </div>
-      <div class="pad">
-        <br />
-
-        <div class="container md-r sm-6 md-3 md-l lg-3 lg-r">
-          <div class="pad">
-            &nbsp;<br />
-            <span class="grey oneliner"
-              >//
-              Publications--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span
-            ><br />
-            <div class="publication-content">
-              <p>
-                In the landscape of clustering algorithms, K-means stands out
-                for its straightforward approach and computational
-                effectiveness. However, its reliance on the initial selection of
-                cluster centers renders it vulnerable to entrapment in local
-                optima, undermining its clustering efficacy. This study
-                introduces an enhanced K-means algorithm, fortified by the
-                integration of the cuckoo search optimization technique. This
-                novel hybrid algorithm leverages the cuckoo search’s ability to
-                navigate the solution space effectively, thereby identifying
-                optimal initial cluster centroids for the K-means algorithm.
-                Empirical evaluation demonstrates that the amalgamated algorithm
-                exhibits superior clustering performance, successfully
-                circumventing the pitfalls of local optima that afflict the
-                traditional K-means approach.
-              </p>
-              <a
-                href="https://ieeexplore.ieee.org/document/10503297"
-                target="_blank"
-                style="color: #f00"
-                >Read More</a
-              >.
-            </div>
-          </div>
-        </div>
-        <br />
-        <span class="grey oneliner"
-          >// Meta
-          --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span
-        >
-        <a href="https://github.com/Gowthamsai29" class="purple-link"
-          >[Github]</a
-        >
-        <a
-          href="https://linkedin.com/in/gowthamsai-alajangi"
-          class="orange-link"
-          >[LinkedIn]</a
-        >
-
-        <br />&nbsp;
-      </div>
-    </div>
-
-    <!-- Publications section -->
-
-    <script
-      src="//code.jquery.com/jquery-3.1.1.min.js"
-      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      // glitch text
-      var things = ["coding programming debugging"];
-      var junk = [
-        "#",
-        "@",
-        "%",
-        "*",
-        "&",
-        "&lt;",
-        "&gt;",
-        "_",
-        "=",
-        "+",
-        "[",
-        "]",
-        "|",
-        "-",
-        "!",
-        "?",
-        "/",
-        "(",
-        ")",
-        "{",
-        "}",
-        "&lt;",
-        "&gt;",
-      ];
-      var thing = things[Math.floor(Math.random() * things.length)];
-      var jnk = junk[Math.floor(Math.random() * junk.length)];
-      var display = document.getElementById("ing");
-      var binaryDisplay = document.getElementById("binary-glitch");
-      var duration = 50; // in milliseconds
-
-      setInterval(function () {
-        var start = Math.floor(Math.random() * thing.length);
-        display.innerHTML =
-          thing.slice(0, start) + jnk + thing.slice(start + 1);
-      }, duration);
-
-      // Glitch effect for binary string
-      var binaryString = " 🅱🅴🅲🆀🆄🅴🆁🅴🅻";
-      setInterval(function () {
-        var start = Math.floor(Math.random() * binaryString.length);
-        binaryDisplay.innerHTML =
-          binaryString.slice(0, start) + jnk + binaryString.slice(start + 1);
-      }, duration);
-    </script>
   </body>
 </html>
